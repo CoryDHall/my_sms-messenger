@@ -1,0 +1,6 @@
+[submodule "my_sms-api"]
+	path = my_sms-api
+	url = ./my_sms-api
+[submodule "my_sms-client"]
+	path = my_sms-client
+	url = ./my_sms-client
