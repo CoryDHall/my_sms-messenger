@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "my_sms-api"
+    },
+    {
+      "path": "my_sms-client"
+    }
+  ],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "editorWhitespace.foreground": "#ffffff44"
+    }
+  }
+}

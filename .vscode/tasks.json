@@ -1,0 +1,69 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "my_sms-client",
+			"problemMatcher": [],
+			"label": "npm: start - my_sms-client",
+			"detail": "ng serve"
+		},
+		{
+			"type": "shell",
+			"command": [
+				"source ~/.zshrc",
+				"&&",
+				"bundle",
+				"install"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/my_sms-api",
+				"group": {
+					"kind": "build",
+					"isDefault": false
+				},
+				"shell": {
+					"executable": "/opt/homebrew/bin/zsh",
+					"args": [
+						"-l", "-c"
+					]
+				}
+			},
+			"problemMatcher": [],
+			"label": "bundle install - my_sms-api",
+			"detail": "bundle install",
+		},
+		{
+			"type": "shell",
+			"command": [
+				"source ~/.zshrc",
+				"&&",
+				"bin/rails",
+				"server",
+				"-p",
+				"3030"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/my_sms-api",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"shell": {
+					"executable": "/opt/homebrew/bin/zsh",
+					"args": [
+						"-l",
+						"-c"
+					]
+				}
+			},
+			"dependsOn": [
+				"bundle install - my_sms-api"
+			],
+			"problemMatcher": [],
+			"label": "rails server - my_sms-api",
+			"detail": "rails server",
+		}
+	]
+}

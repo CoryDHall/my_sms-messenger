@@ -1,0 +1,10 @@
+{
+  "workbench.colorCustomizations": {
+    "editorWhitespace.foreground": "#ffffff44"
+  },
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnType": true
+  },
+}
